@@ -1,2 +1,8 @@
 set breakpoint pending on
 set debuginfod enabled on
+# Print elements with unlimited.
+# https://sourceware.org/gdb/onlinedocs/gdb/Print-Settings.html
+set print elements 0
+# Follow the child process instead of the parent process.
+# https://sourceware.org/gdb/onlinedocs/gdb/Forks.html
+set follow-fork-mode child
